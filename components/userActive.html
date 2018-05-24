@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+    <div class="mark">
+        <div class="main">
+            <img src="http://napi2.feyuu.com/user/50000119/album/9c95278f0210d9f5c1b6100891922b9e.jpg" alt="">
+        </div>
+    </div>
+    <div class="search">
+        <form action="">
+            <label>性别
+                <select name="sex" id="sex">
+                    <option value="">所有</option>
+                    <option value="man">男</option>
+                    <option value="woman">女</option>
+                </select>
+            </label>
+            <label>类型
+                <select name="origin" id="origin">
+                    <option value="">所有</option>
+                    <option value="man">ios</option>
+                    <option value="woman">安卓</option>
+                </select>
+            </label>
+            <label>日期
+                <input class="timeInput" type="date" name="startTime">--<input class="timeInput" type="date" name="endTime">
+            </label>
+            <label>用户ID
+                <input type="text" name="uid" style="width: 100px">
+            </label>
+            <label>用户昵称
+                <input type="text" name="uid" style="width: 100px">
+            </label>
+            <button type="button">查询</button>
+            <button type="button">重置</button>
+            <button type="button">导出excel</button>
+        </form>
+    </div>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>用户昵称(ID号)</td>
+            <td>性别</td>
+            <td>文字描述</td>
+            <td>发布时间</td>
+            <td>视频</td>
+            <td>时长</td>
+            <td>积分收入</td>
+            <td>类型</td>
+            <td>易盾检测</td>
+            <td>状态</td>
+            <td>操作</td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12093</td>
+                <td class="next">你怎么看(125545)</td>
+                <td>女</td>
+                <td>我是文字描述</td>
+                <td>2018-1-24</td>
+                <td>
+                    <img src="http://napi2.feyuu.com/user/50000119/album/9c95278f0210d9f5c1b6100891922b9e.jpg" alt="">
+                </td>
+                <td>13秒</td>
+                <td>10000</td>
+                <td style="color: #0000ff;">收费</td>
+                <td style="color: #0000ff;">检测中</td>
+                <td>
+                    <select name="style">
+                        <option value="">待审核</option>
+                        <option value="">审核动过</option>
+                        <option value="">审核不通过</option>
+                    </select>
+                </td>
+
+                <td>
+                    <button type="button" class="error">删除</button>
+                </td>
+            </tr>
+            <tr>
+                <td>12093</td>
+                <td class="next">你怎么看(125545)</td>
+                <td>女</td>
+                <td>我是文字描述</td>
+                <td>2018-1-24</td>
+                <td>
+                    <img src="http://napi2.feyuu.com/user/50000119/album/9c95278f0210d9f5c1b6100891922b9e.jpg" alt="">
+                </td>
+                <td>13秒</td>
+                <td>10000</td>
+                <td style="color: #008800;">免费</td>
+                <td style="color: #0000ff;">检测中</td>
+                <td>
+                    <select name="style">
+                        <option value="">待审核</option>
+                        <option value="">审核动过</option>
+                        <option value="">审核不通过</option>
+                    </select>
+                </td>
+
+                <td>
+                    <button type="button" class="error">删除</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <ul class="page">
+        <p>共<span>188</span>条</p>
+        <i class="iconfont icon-zuoyoujiantou"></i>
+        <div>
+
+        </div>
+        <i class="iconfont icon-next"></i>
+    </ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/comment.js"></script>
+<script src="../js/pageing.js"></script>

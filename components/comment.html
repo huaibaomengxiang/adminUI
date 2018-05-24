@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+    <div class="search">
+        <form action="">
+            <label>日期
+                <input class="timeInput" type="date" name="startTime">--<input class="timeInput" type="date" name="endTime">
+            </label>
+            <label>用户ID
+                <input type="text" name="uid" style="width: 100px">
+            </label>
+            <label>用户昵称
+                <input type="text" name="uid" style="width: 100px">
+            </label>
+            <label>关键词
+                <input type="text" name="uid" style="width: 100px">
+            </label>
+            <button type="button">查询</button>
+            <button type="button">重置</button>
+        </form>
+    </div>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>用户昵称(ID号)</td>
+                <td>发布时间</td>
+                <td>内容</td>
+                <td>动态ID</td>
+                <td>易盾检测结果</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12093</td>
+                <td class="next">你怎么看(125545)</td>
+                <td>2018-1-24</td>
+
+                <td>我是评论内容</td>
+                <td class="next">我是动态ID</td>
+                <td style="color: #0000ff;">检测中</td>
+                <td>
+                    <button type="button" class="error">删除</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <ul class="page">
+        <p>共<span>188</span>条</p>
+        <i class="iconfont icon-zuoyoujiantou"></i>
+        <div>
+
+        </div>
+        <i class="iconfont icon-next"></i>
+    </ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>

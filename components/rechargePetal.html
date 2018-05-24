@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+    <div class="search">
+        <form action="">
+            <label>时间
+                <input type="datetime-local" name="startTime" class="timeInput">--<input type="datetime-local" name="endTime" class="timeInput">
+            </label>
+            <button type="button">查询</button>
+            <button type="button">重置</button>
+        </form>
+        <input type="radio" name="detail" value="general">汇总
+        <input type="radio" name="detail" value="detail">明细
+    </div>
+    <table cellpadding="0" cellspacing="0" id="general">
+        <thead>
+        <tr>
+            <td>普通充值</td>
+            <td>聊天充值</td>
+            <td>私房充值</td>
+            <td>看照片(个人中心)</td>
+            <td>看视频(个人中心)</td>
+            <td>邂逅-视频聊天</td>
+            <td>个人中心-视频聊天</td>
+            <td>消息-视频聊天</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>59%</td>
+            <td>6%</td>
+            <td>0</td>
+            <td>29%</td>
+            <td>0</td>
+            <td>8%</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+    </table>
+    <table cellpadding="0" cellspacing="0" id="detail" style="display: none">
+        <thead>
+        <tr>
+            <td>日期</td>
+            <td>普通充值</td>
+            <td>聊天充值</td>
+            <td>私房充值</td>
+            <td>看照片(个人中心)</td>
+            <td>看视频(个人中心)</td>
+            <td>邂逅-视频聊天</td>
+            <td>个人中心-视频聊天</td>
+            <td>消息-视频聊天</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2018-01-19</td>
+            <td>59%</td>
+            <td>6%</td>
+            <td>0</td>
+            <td>29%</td>
+            <td>0</td>
+            <td>8%</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+    </table>
+    <ul class="page">
+        <p>共<span>188</span>条</p>
+        <i class="iconfont icon-zuoyoujiantou"></i>
+        <div>
+
+        </div>
+        <i class="iconfont icon-next"></i>
+    </ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>
+<script>
+    document.querySelector("input[type=radio][value=general]").checked='checked'
+    $(":radio").click(function () {
+        if($(this).val()=="general"){
+            $("#detail").hide()
+            $("#general").show()
+        }else if($(this).val()=="detail"){
+            $("#general").hide()
+            $("#detail").show()
+        }
+    })
+</script>

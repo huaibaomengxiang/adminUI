@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+<div class="mark">
+    <div class="main">
+        <form action="">
+            <div class="form_item">
+                <label >
+                    ID
+                </label>
+                <input type="text" name="id" readonly>
+            </div>
+            <div class="form_item">
+                <label >
+                    名称
+                </label>
+                <input type="text" name="name" style="width: 150px">
+            </div>
+            <div class="form_item">
+                <label >
+                    类型
+                </label>
+                <input type="text" name="style" readonly>
+            </div>
+            <div class="form_item">
+                <label >
+                    排序值
+                </label>
+                <input type="text" name="sort" style="width: 150px">
+            </div>
+            <div class="form_item">
+                <label >
+                    开关
+                </label>
+                <select name="">
+                    <option value="0">开启</option>
+                    <option value="1">关闭</option>
+                </select>
+            </div>
+            <button>提交</button>
+        </form>
+    </div>
+</div>
+<div class="search">
+    <button type="button" class="add" style="margin-left: 10px">添加</button>
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>排序值</td>
+        <td>名称</td>
+        <td>开关</td>
+        <td>话术详情</td>
+        <td>添加时间</td>
+        <td>更新时间</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>9</td>
+        <td><input type="text" value="5522"></td>
+        <td>模板1</td>
+        <td>
+            <select name="status">
+                <option value="0">开启</option>
+                <option value="1">关闭</option>
+            </select>
+        </td>
+        <td class="next">话术详情</td>
+        <td>2017-11-28 10:40:45</td>
+        <td>2017-12-27 13:51:51</td>
+        <td>
+            <button type="button" class="edit" style="margin-left: 0">编辑</button>
+            <button type="button" class="error" style="margin-left: 10px">删除</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/comment.js"></script>
+<script src="../js/pageing.js"></script>

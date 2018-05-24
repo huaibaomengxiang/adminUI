@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/modify.css">
+</head>
+<body>
+    <div class="modify">
+
+        <form action="">
+            <div class="form_item">
+                <label>昵称</label>
+                <input type="text">
+            </div>
+            <div class="form_item">
+                <label>性别</label>
+                <input type="text" readonly>
+            </div>
+            <div class="form_item">
+                <label >年龄</label>
+                <input type="text">
+            </div>
+            <div class="form_item">
+                <label >身高</label>
+                <select name="stature" id="stature">
+                    <option value="140">140</option>
+                    <option value="150">150</option>
+                    <option value="160">160</option>
+                    <option value="170">170</option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label >收入</label>
+                <select name="income" id="income">
+                    <option value="140">2000以下</option>
+                    <option value="150">2000-5000</option>
+                    <option value="160">5000-10000</option>
+                    <option value="170">10000-20000</option>
+                    <option value="170">20000以上</option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label >城市</label>
+                <input type="text">市
+            </div>
+            <div class="form_item">
+                <label >职业</label>
+                <input type="text">
+            </div>
+            <div class="form_item">
+                <label >交友目的</label>
+                <select name="target" id="target">
+                    <option value="160">认识新朋友</option>
+                    <option value="140">找人聊天</option>
+                    <option value="150">找人约会</option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label >情感状况</label>
+                <select name="emotion" id="emotion">
+                    <option value="0">单身</option>
+                    <option value="1">恋爱</option>
+                    <option value="2">已婚</option>
+                </select>
+            </div>
+            <div class="form_item">
+
+            </div>
+            <div class="form_item">
+                <label>花语</label>
+                <input type="text" class="longer flowerlabel">
+                <span class="next">编辑</span>
+            </div>
+            <div class="form_item">
+
+            </div>
+            <div class="form_item">
+                <label >签名</label>
+                <input type="text" class="longer">
+            </div>
+            <div class="form_item">
+
+            </div>
+            <div class="form_item">
+                <label >音频</label>
+                <input type="file" accept="">
+            </div>
+            <div class="form_item">
+                <label >视频</label>
+                <input type="file">
+            </div>
+            <div class="form_item">
+                <label >背景图</label>
+                <input type="file">
+            </div>
+            <div class="form_item">
+            </div>
+            <div class="showImg">
+                <img src="http://img.sfaa.tv/icon/default_back.png" alt="">
+            </div>
+
+            <div class="form_item">
+                <label >经度</label>
+                <input type="text">
+            </div>
+            <div class="form_item">
+                <label >纬度</label>
+                <input type="text">
+                <span>浙江省宁波市荆州区泰安西路167</span>
+
+            </div>
+            <div class="form_item">
+                <label >手机号</label>
+                <input type="text">
+                <button onclick="return false;">查看</button>
+            </div>
+            <div class="form_item">
+                <label >微信号</label>
+                <input type="text">
+            </div>
+            <button class="submit">提交</button>
+        </form>
+        <div class="mark">
+            <ul class="main">
+                <li><input type="checkbox" value="小清新"><span>小清新</span></li>
+                <li><input type="checkbox" value="大叔"><span>大叔</span></li>
+                <li><input type="checkbox" value="小鲜肉"><span>小鲜肉</span></li>
+                <li><input type="checkbox" value="宅男"><span>宅男</span></li>
+                <li><input type="checkbox" value="霸道"><span>霸道</span></li>
+                <button class="markSubmit">提交</button>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/modify.js"></script>

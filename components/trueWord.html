@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/tabs.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/userEdit.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<style>
+    .add{
+        margin-left: 10px;
+    }
+    .edit{
+        margin-left: 0;
+    }
+    .error{
+        margin-left: 10px;
+    }
+</style>
+<body>
+<div class="tabs">
+    <header>
+        <ul class="tab">
+            <li class="tabActive">真心话</li>
+            <li>挑逗</li>
+        </ul>
+    </header>
+    <main>
+        <ul class="content">
+            <li>
+                <div class="search">
+                    <button type="button" class="add">添加</button>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td>文案</td>
+                        <td>排序值</td>
+                        <td>状态</td>
+                        <td>花瓣价格</td>
+                        <td>类型</td>
+                        <td>添加时间</td>
+                        <td>更新时间</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>真心话1</td>
+                        <td>
+                            <input type="text" value="333">
+                        </td>
+                        <td>
+                            <select name="status">
+                                <option value="">开启</option>
+                                <option value="">关闭</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" value="6.00">
+                        </td>
+                        <td>真心话</td>
+                        <td>2018-01-12 13:22:12</td>
+                        <td>2018-01-12 13:22:12</td>
+                        <td>
+                            <button type="button" class="edit">编辑</button>
+                            <button type="button" class="error">删除</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <div class="search">
+                    <button type="button" class="add">添加</button>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td>文案</td>
+                        <td>排序值</td>
+                        <td>状态</td>
+                        <td>花瓣价格</td>
+                        <td>类型</td>
+                        <td>添加时间</td>
+                        <td>更新时间</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>天下最好笑的事笑一个</td>
+                        <td>
+                            <input type="text" value="120">
+                        </td>
+                        <td>
+                            <select name="status">
+                                <option value="">开启</option>
+                                <option value="">关闭</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" value="15.00">
+                        </td>
+                        <td>挑逗</td>
+                        <td>2018-01-12 13:22:12</td>
+                        <td>2018-01-12 13:22:12</td>
+                        <td>
+                            <button type="button" class="edit">编辑</button>
+                            <button type="button" class="error">删除</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <div class="mark">
+                <div class="main">
+                    <form action="">
+                        <div class="form_item">
+                            <label >
+                                类型
+                            </label>
+                            <input type="text" name="status" readonly>
+                        </div>
+                        <div class="form_item">
+                            <label >
+                                文案
+                            </label>
+                            <textarea name="" id="adminRemark" cols="30" rows="5">
+            </textarea>
+                        </div>
+                        <div class="form_item">
+                            <label >
+                                状态
+                            </label>
+                            <select name="adminStatus" id="admin_status">
+                                <option value="0">启用</option>
+                                <option value="1">关闭</option>
+                            </select>
+                        </div>
+                        <div class="form_item">
+                            <label >
+                                排序值
+                            </label>
+                            <input type="text" name="nikename">
+                        </div>
+                        <div class="form_item">
+                            <label >
+                                花瓣价格
+                            </label>
+                            <input type="text" name="nikename">
+                        </div>
+                        <button>提交</button>
+                    </form>
+                </div>
+            </div>
+        </ul>
+        <ul class="page">
+            <p>共<span>188</span>条</p>
+            <i class="iconfont icon-zuoyoujiantou"></i>
+            <div>
+
+            </div>
+            <i class="iconfont icon-next"></i>
+        </ul>
+    </main>
+</div>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/tabs.js"></script>
+<script src="../js/comment.js"></script>
+<script src="../js/pageing.js"></script>

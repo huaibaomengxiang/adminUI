@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+    <div class="mark">
+        <div class="main">
+            <img src="http://napi2.feyuu.com/user/50000119/album/9c95278f0210d9f5c1b6100891922b9e.jpg" alt="">
+        </div>
+    </div>
+    <div class="search">
+        <form action="">
+            <label>认证状态
+                <select name="style" id="style">
+                    <option value="">待审核</option>
+                    <option value="man">认证通过</option>
+                    <option value="woman">认证失败</option>
+                </select>
+            </label>
+            <label>时间
+                <input type="datetime-local" name="startTime" class="timeInput">--<input type="datetime-local" name="endTime" class="timeInput">
+            </label>
+            <label>用户ID
+                <input type="text" name="uid" style="width: 100px">
+            </label>
+            <label>用户昵称
+                <input type="text" name="uid" style="width: 100px">
+            </label>
+            <button type="button">查询</button>
+            <button type="button">重置</button>
+            <button type="button">导出excel</button>
+        </form>
+    </div>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>用户昵称</td>
+                <td>图片</td>
+                <td>是否公开</td>
+                <td>时间</td>
+                <td>排序</td>
+                <td>置顶</td>
+                <td>易盾检测</td>
+                <td>状态</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12093</td>
+                <td class="next">铁锤妹妹(50000457)</td>
+                <td>
+                    <img src="http://napi2.feyuu.com/user/50000119/album/9c95278f0210d9f5c1b6100891922b9e.jpg" alt="">
+                </td>
+                <td>
+                    <select name="isFree">
+                        <option value="">私密</option>
+                        <option value="">公开</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="time" value="2017-12-32">
+                </td>
+                <td>
+                    <input type="text" name="sort" value="5">
+                </td>
+                <td>
+                    <select name="isTop">
+                        <option value="">置顶</option>
+                        <option value="">普通</option>
+                    </select>
+                </td>
+                <td style="color: #008800;">通过</td>
+                <td>
+                    <select name="style">
+                        <option value="">待审核</option>
+                        <option value="">审核动过</option>
+                        <option value="">审核不通过</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" class="error">删除</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <ul class="page">
+        <p>共<span>188</span>条</p>
+        <i class="iconfont icon-zuoyoujiantou"></i>
+        <div>
+
+        </div>
+        <i class="iconfont icon-next"></i>
+    </ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/comment.js"></script>
+<script src="../js/pageing.js"></script>

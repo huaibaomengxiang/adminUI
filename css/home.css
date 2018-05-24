@@ -1,0 +1,126 @@
+header{
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background: url("../images/zvingBlue.png") center/cover;
+    display: flex;
+    justify-content: space-between;
+}
+header>div{
+    width: 350px;
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+.logo{
+    font-size: 30px;
+}
+.sysInfo{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.sysInfo>span{
+    font-weight: normal;
+    color: #fff324;
+    margin-right: 5px;
+}
+.adminInfo{
+    color: #eee;
+}
+.adminInfo>span{
+    color: #fff;
+    font-weight: bold;
+}
+.exit{
+    cursor: pointer;
+    padding-left: 25px;
+    background: url("../images/icon023a1.gif") 5px 0 no-repeat;
+}
+.exit:hover{
+    color: #fff324;
+}
+/*内容部分*/
+main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    color: #fff;
+    width: 200px;
+    height: 100%;
+    background: #3d6cff;
+}
+.menubar{
+    width: 100%;
+    cursor: pointer;
+}
+.menu_item{
+
+}
+.menu_item_title{
+    line-height: 30px;
+    height: 30px;
+    padding:0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_item_title:hover{
+    background: #2e52c0;
+}
+.icon-arrow-up{
+    transition: all .3s linear;
+}
+.arrowActive{
+    transform: rotate(180deg);
+}
+.menu_child{
+    padding-left: 30px;
+    display: none;
+}
+.menu_child_item:hover a{
+    color: #fff324;
+}
+.menuActive a{
+    color: #fff324;
+}
+a{
+    color: #fff;
+}
+.content{
+    flex:1;
+    height: 100%;
+    background: #fff;
+    overflow-y: scroll;
+}
+.crumbs{
+    width: 100%;
+    height: 30px;
+    background: #eee;
+    color: #333;
+    line-height: 30px;
+    padding:0 15px;
+    font-size: 15px;
+    overflow: hidden;
+}
+.crumbs span{
+    display: none;
+}
+.crumbs a{
+    color: #000;
+    font-weight: bold;
+}
+.crumbs a:hover{
+    cursor: pointer;
+    color: #1c8de0;
+}
+.content>iframe{
+    width: 100%;
+    height: calc(100% - 35px);
+}
+/*隐藏滚动条*/
+::-webkit-scrollbar{
+display: none;
+}

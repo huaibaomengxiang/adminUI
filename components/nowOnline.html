@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+<div class="search">
+    <input type="radio" name="detail" value="all">所有
+    <input type="radio" name="detail" value="authentic">认证用户
+    <input type="radio" name="detail" value="notAuthentic">非认证用户
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>用户</td>
+        <td>用户类型</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>最美邱淑贞yy(40)</td>
+        <td>已认证</td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>
+<script>
+    document.querySelector("input[type=radio][value=all]").checked='checked'
+    $(":radio").click(function () {
+        if($(this).val()=="general"){
+            $("#detail").hide()
+            $("#general").show()
+        }else if($(this).val()=="detail"){
+            $("#general").hide()
+            $("#detail").show()
+        }
+    })
+</script>

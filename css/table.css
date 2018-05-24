@@ -1,0 +1,105 @@
+/*搜索框*/
+.search{
+    width: 100%;
+    font-size: 12px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.search input,select{
+    padding:3px;
+}
+.search select{
+    width: 68px;
+}
+.search input{
+    width: 100px;
+}
+.search input[type='radio']{
+    width: 20px;
+    margin-left: 20px;
+}
+/*表格*/
+table{
+    font-size: 12px;
+    width: 100%;
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid #eee;
+}
+td{
+    padding: 8px 5px;
+    text-align: center;
+}
+thead>tr>td{
+    color: #666;
+    font-weight: bold;
+    text-align: center;
+}
+tbody tr:hover{
+    background: #f0fffa;
+}
+tbody td{
+    color: #444;
+}
+tbody td a:hover{
+    color: orange;
+}
+
+td>img{
+    width: 100px;
+    height: 100px;
+}
+input{
+    width: 55px;
+}
+tbody select{
+    width: 100px;
+}
+/*分页*/
+.page{
+    width: 100%;
+    padding-right: 20px;
+    text-align: right;
+}
+ul>P{
+    display: inline-block;
+    color: #aaa;
+    font-size: 14px;
+}
+ul>div{
+    display: inline-block;
+}
+ul>div>span:hover{
+    cursor: pointer;
+    color: #1c8de0;
+}
+/*ul>div>span{*/
+    /*width: 12px;*/
+    /*overflow: hidden;*/
+/*}*/
+/*ul>div>span>span{*/
+    /*display: block;*/
+    /*margin-top:-22px;*/
+/*}*/
+ul>div>li{
+    display: inline-block;
+    padding:5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul>div>li:hover{
+    color: #1c8de0;
+}
+ul>i:hover{
+    content: ">";
+    cursor: pointer;
+    color: #1c8de0;
+}
+.pageActive{
+    color: #1c8de0;
+}
+.next{
+    font-size: 12px;
+}
+

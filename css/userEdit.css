@@ -1,0 +1,10 @@
+.tabs{
+    overflow-x: scroll;
+}
+.content li table{
+
+    white-space: nowrap;
+}
+.content li table::-webkit-scrollbar{
+    display: block;
+}

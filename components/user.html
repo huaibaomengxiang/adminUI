@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+    <div class="search">
+        <form action="">
+            <label>用户ID
+                <input type="text">
+            </label>
+            <label>用户FID
+                <input type="text">
+            </label>
+            <label>用户昵称
+                <input type="text">
+            </label>
+            <label>手机号
+                <input type="text">
+            </label>
+            <label>日期
+                <input class="timeInput" type="date" name="startTime">-<input class="timeInput" type="date" name="endTime">
+            </label>
+            <label>性别
+                <select name="sex" id="sex">
+                    <option value="">所有</option>
+                    <option value="man">男</option>
+                    <option value="woman">女</option>
+                </select>
+            </label>
+
+            <label>来源
+                <select name="origin" id="origin">
+                    <option value="">所有</option>
+                    <option value="man">ios</option>
+                    <option value="woman">安卓</option>
+                </select>
+            </label>
+
+            <label>用户状态
+                <select name="origin" id="status">
+                    <option value="">所有</option>
+                    <option value="man">ios</option>
+                    <option value="woman">安卓</option>
+                </select>
+            </label>
+
+            <label>主渠道
+                <select name="channel" id="channel">
+                    <option value="">所有</option>
+                    <option value="man">ios</option>
+                    <option value="woman">安卓</option>
+                </select>
+            </label>
+
+            <label>子渠道
+                <select name="childChannel" id="childChannel">
+                    <option value="">所有</option>
+                    <option value="man">ios</option>
+                    <option value="woman">安卓</option>
+                </select>
+            </label>
+            <button type="button">查询</button>
+
+        </form>
+    </div>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <td>UID</td>
+            <td>FID</td>
+            <td>昵称</td>
+            <td>性别</td>
+            <td>头像</td>
+            <td>状态</td>
+            <td>来源</td>
+            <td>渠道来源</td>
+            <td>积分余额</td>
+            <td>消费数</td>
+            <td>充值数(RMB)</td>
+            <td>视频通话时长(分)</td>
+            <td>邀请好友数</td>
+            <td>注册方式</td>
+            <td>手机号</td>
+            <td>注册时间</td>
+            <td>在线状态</td>
+            <td>操作</td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>50000900</td>
+                <td>5000090051</td>
+                <td class="next">你怎么看</td>
+                <td>女</td>
+                <td>
+                    <img class="acatar" src="http://napi2.feyuu.com/user/50000119/album/9c95278f0210d9f5c1b6100891922b9e.jpg" alt="">
+                </td>
+                <td>正常</td>
+                <td>安卓</td>
+                <td>null</td>
+                <td>0.00</td>
+                <td class="next">0.00</td>
+                <td class="next">0</td>
+                <td class="next">0</td>
+                <td class="next">0</td>
+                <td>手机注册</td>
+                <td>
+                    <p>177*****511</p>
+                    <button>查看</button>
+                </td>
+                <td>2012-12-26 12:43:56</td>
+                <td>在线</td>
+                <td>
+
+                    <a href="" onclick="javascript: if(!confirm('确定删除吗？')){return false;}">
+                        云信
+                    </a>
+                    <a href="" onclick="javascript: if(!confirm('确定删除吗？')){return false;}">
+                        封号
+                    </a>
+                    <a href="" onclick="javascript: if(!confirm('确定删除吗？')){return false;}">
+                        黑名单
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <ul class="page">
+        <p>共<span>188</span>条</p>
+        <i class="iconfont icon-zuoyoujiantou"></i>
+        <div>
+
+        </div>
+        <i class="iconfont icon-next"></i>
+    </ul>
+
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>

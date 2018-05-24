@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+    <div class="search">
+        <form action="">
+            <label>时间
+                <input class="timeInput" type="date" name="startTime">-<input class="timeInput" type="date" name="endTime">
+            </label>
+            <label>用户ID
+                <input type="text">
+            </label>
+            <label>用户昵称
+                <input type="text">
+            </label>
+            <button type="button">查询</button>
+            <button type="button">重置</button>
+            <button type="button">导出Excel</button>
+        </form>
+    </div>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <td>用户ID</td>
+            <td>性别</td>
+            <td>积分数</td>
+            <td>视频积分</td>
+            <td>聊天积分</td>
+            <td>收到礼物积分</td>
+            <td>视频聊天积分</td>
+            <td>照片积分</td>
+            <td>真心话/挑逗积分</td>
+            <td>邀请好友积分</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>50000538(铁锤妹妹)</td>
+            <td>女</td>
+            <td>12.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>12.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr>
+        </tbody>
+    </table>
+    <ul class="page">
+        <p>共<span>188</span>条</p>
+        <i class="iconfont icon-zuoyoujiantou"></i>
+        <div>
+
+        </div>
+        <i class="iconfont icon-next"></i>
+    </ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>

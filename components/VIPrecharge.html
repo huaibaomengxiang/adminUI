@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<style>
+    .main input:not([type=checkbox]){
+        width: 150px;
+    }
+</style>
+<body>
+<div class="mark">
+    <div class="main">
+        <form action="">
+            <div class="form_item">
+                <label >
+                    ID
+                </label>
+                <input type="text" name="id">
+            </div>
+            <div class="form_item">
+                <label >
+                    会员名称
+                </label>
+                <input type="text">
+            </div>
+            <div class="form_item">
+                <label >
+                    原价
+                </label>
+                <input type="text">
+            </div>
+            <div class="form_item">
+                <label >
+                    现价
+                </label>
+                <input type="text">
+            </div>
+            <div class="form_item">
+                <label >
+                    会员天数
+                </label>
+                <input type="text">
+                <input type="checkbox"><span>永久赠送</span>
+            </div>
+            <div class="form_item">
+                <label >
+                    排序值
+                </label>
+                <input type="text">
+            </div>
+            <div class="form_item">
+                <label >
+                    是否推荐
+                </label>
+                <input type="checkbox">
+            </div>
+            <div class="form_item">
+                <label >
+                    状态
+                </label>
+                <select name="adminStatus" id="admin_status">
+                    <option value="0">启用</option>
+                    <option value="1">关闭</option>
+                </select>
+            </div>
+            <button>提交</button>
+        </form>
+    </div>
+</div>
+<div class="search">
+    <button type="button" class="add" style="margin-left: 10px">添加</button>
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>会员名称</td>
+        <td>原价</td>
+        <td>现价</td>
+        <td>会员天数</td>
+        <td>是否推荐</td>
+        <td>排序值</td>
+        <td>状态</td>
+        <td>添加时间</td>
+        <td>更新时间</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>9</td>
+        <td>永久</td>
+        <td>100.00</td>
+        <td>70.00</td>
+        <td>1</td>
+        <td>否</td>
+        <td>111</td>
+        <td>开启</td>
+        <td>2017-11-28 10:40:45</td>
+        <td>2017-12-27 13:51:51</td>
+        <td>
+            <button type="button" class="edit" style="margin-left: 0">编辑</button>
+            <button type="button" class="error" style="margin-left: 10px">删除</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/comment.js"></script>
+<script src="../js/pageing.js"></script>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<style>
+    .money{
+        float: left;
+        color: #000;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+</style>
+<body>
+<div class="search">
+    <form action="">
+        <label>充值人ID
+            <input type="text">
+        </label>
+        <label>充值人昵称
+            <input type="text">
+        </label>
+        <label>时间
+            <input class="timeInput" type="date" name="startTime">-<input class="timeInput" type="date" name="endTime">
+        </label>
+        <label>支付通道
+            <select name="sex" id="sex">
+                <option value="">全部</option>
+                <option value="man">苹果支付</option>
+                <option value="woman">微信</option>
+                <option value="woman">支付宝</option>
+                <option value="woman">中润付</option>
+            </select>
+        </label>
+
+        <label>来源
+            <select name="origin" id="origin">
+                <option value="">所有</option>
+                <option value="man">ios</option>
+                <option value="woman">安卓</option>
+            </select>
+        </label>
+
+        <label>主渠道
+            <input type="text">
+        </label>
+
+        <label>子渠道
+            <input type="text">
+        </label>
+        <button type="button">查询</button>
+
+    </form>
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>充值人(ID)</td>
+        <td>渠道号</td>
+        <td>金额</td>
+        <td>来源</td>
+        <td>支付通道</td>
+        <td>时间</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>偏偏拍广告公司刚(50000029)</td>
+        <td class="next">huajian_0</td>
+        <td>49.00</td>
+        <td>安卓</td>
+        <td>支付宝</td>
+        <td>2012-12-26 12:43:56</td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p class="money">总共充值金额:<span style="color: red">22982.00</span></p>
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+<div class="search">
+    <form action="">
+        <label>时间
+            <input type="datetime-local" name="startTime" class="timeInput">--<input type="datetime-local" name="endTime" class="timeInput">
+        </label>
+        <label>用户ID
+            <input type="text">
+        </label>
+        <label>用户昵称
+            <input type="text">
+        </label>
+        <label>视频类型
+            <select name="videoStatus" id="">
+                <option value="">所有</option>
+                <option value="">邂逅</option>
+                <option value="">普通</option>
+            </select>
+        </label>
+        <button type="button">查询</button>
+        <button type="button">重置</button>
+    </form>
+    <input type="radio" name="detail" value="general">汇总
+    <input type="radio" name="detail" value="detail">明细
+    <p style="display: inline-block;margin-left: 20px">通话总时长(分):<span style="color: red">2</span></p>
+</div>
+<table cellpadding="0" cellspacing="0" id="general">
+    <thead>
+    <tr>
+        <td>日期</td>
+        <td>当日通话时长(分)</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>2018-01-02</td>
+        <td>2</td>
+    </tr>
+    </tbody>
+</table>
+<table cellpadding="0" cellspacing="0" id="detail" style="display: none">
+    <thead>
+    <tr>
+        <td>日期</td>
+        <td>呼叫用户</td>
+        <td>接听用户</td>
+        <td>开始时间</td>
+        <td>结束时间</td>
+        <td>会话状态</td>
+        <td>是否邂逅</td>
+        <td>时长(分)</td>
+        <td>评价星级</td>
+        <td>评价内容</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>2018-01-19</td>
+        <td>滚滚滚(50000042)</td>
+        <td>12345678(50000038)</td>
+        <td>2018-01-22 13:38:09</td>
+        <td>2018-01-22 13:38:09</td>
+        <td>视频完成</td>
+        <td>普通</td>
+        <td>1</td>
+        <td>4</td>
+        <td>很热情</td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>
+<script>
+    document.querySelector("input[type=radio][value=general]").checked='checked'
+    $(":radio").click(function () {
+        if($(this).val()=="general"){
+            $("#detail").hide()
+            $("#general").show()
+        }else if($(this).val()=="detail"){
+            $("#general").hide()
+            $("#detail").show()
+        }
+    })
+</script>

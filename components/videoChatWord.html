@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+<div class="mark">
+    <div class="main">
+        <form action="">
+            <div class="form_item">
+                <label >
+                    ID
+                </label>
+                <input type="text" name="nikename">
+            </div>
+            <div class="form_item">
+                <label >
+                    文案
+                </label>
+                <textarea name="" id="adminRemark" cols="30" rows="5">
+            </textarea>
+            </div>
+            <div class="form_item">
+                <label >
+                    状态
+                </label>
+                <select name="adminStatus" id="admin_status">
+                    <option value="0">启用</option>
+                    <option value="1">关闭</option>
+                </select>
+            </div>
+
+            <button>提交</button>
+        </form>
+    </div>
+</div>
+<div class="search">
+    <button type="button" class="add" style="margin-left: 10px">添加</button>
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>文案</td>
+        <td>状态</td>
+        <td>添加时间</td>
+        <td>更新时间</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>9</td>
+        <td>hhhh</td>
+        <td>启用</td>
+        <td>2017-11-28 10:40:45</td>
+        <td>2017-12-27 13:51:51</td>
+        <td>
+            <button type="button" class="edit" style="margin-left: 0">编辑</button>
+            <button type="button" class="error" style="margin-left: 10px">删除</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/comment.js"></script>
+<script src="../js/pageing.js"></script>

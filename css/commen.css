@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+html,body,img{
+    width: 100%;
+    height: 100%;
+}
+table{
+    background: #fff;
+}
+tbody img{
+    cursor: pointer;
+}
+/*输入框 选择框*/
+input,select{
+    color: #333;
+    padding:5px 8px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #179cff;
+}
+select:focus{
+    outline: none;
+    border: 1px solid #179cff;
+}
+/*输入框尺寸*/
+input.lg,select.lg{
+    width: 100px;
+}
+input.md,select.md{
+    width: 80px;
+}
+input.sm,select.sm{
+    width: 60px;
+}
+input.mini,select.mini{
+    width: 50px;
+}
+input[type=checkbox],input[type=radio]{
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+/*日期输入框*/
+.timeInput{
+    width: 135px!important;
+}
+.timeInputLg{
+    width: 150px;
+}
+/*按钮*/
+button{
+    outline: none;
+    padding:5px 15px;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    background: #67c23a;
+    color: #fff;
+}
+button:active{
+    background: #85ce61;
+}
+button.error{
+    background: #e4464c;
+}
+button.error:active{
+    background: #ff4d54;
+}
+
+/*a标签*/
+a{
+    color: #179cff;
+}
+/*表单*/
+form{
+    padding:10px;
+}
+textarea{
+    padding:5px;
+    outline: none;
+    border-radius: 5px;
+}
+textarea:active{
+    border: 1px solid #179cff;
+}
+.form_item{
+    margin-bottom: 10px;
+}
+label{
+    line-height: 30px;
+    padding-right:10px;
+    display: block;
+    float: left;
+    text-align: right;
+}
+/*可点击文字*/
+.next{
+    font-size: 16px;
+    color: #1c8de0;
+    cursor: pointer;
+}
+.next:hover{
+    color: orange;
+}
+/*遮罩*/
+.mark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+.mark>.main{
+    padding:10px;
+    width: 50%;
+    background: #fff;
+    border: 1px solid #eee;
+    margin:50px auto;
+}
+.main>img{
+    display: block;
+    margin:10px auto;
+    max-width: 400px;
+}
+/*头像*/
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

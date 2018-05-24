@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/tabs.css">
+</head>
+<style>
+    h2{
+        font-size: 16px;
+        padding: 5px 0;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 5px;
+    }
+    label{
+        width: 200px;
+    }
+    button{
+        margin-left: 200px;
+    }
+</style>
+<body>
+<ul>
+    <li>
+        <h2>花瓣数量设置</h2>
+        <form action="">
+            <div class="form_item">
+                <label>男性新用户注册赠送花瓣</label>
+                <input type="text" value="3">
+            </div>
+            <div class="form_item">
+                <label>私房视频花瓣价格</label>
+                <input type="text" value="3">
+            </div>
+            <div class="form_item">
+                <label>私密照片花瓣价格</label>
+                <input type="text" value="3">
+            </div>
+            <div class="form_item">
+                <label>聊天花瓣价格</label>
+                <input type="text" value="3">
+            </div>
+
+            <button>提交</button>
+        </form>
+    </li>
+    <li>
+        <h2>聊天花瓣价格设置</h2>
+        <div class="tabs">
+            <header>
+                <ul class="tab">
+                    <li class="tabActive">一级</li>
+                    <li>二级</li>
+                    <li>三级</li>
+                    <li>四级</li>
+                    <li>五级</li>
+                    <li>六级</li>
+                    <li>七级</li>
+                </ul>
+            </header>
+            <main>
+                <ul class="content">
+                    <li>
+                        <form action="">
+                            <div class="form_item">
+                                <label>语音聊天花瓣/分钟</label>
+                                <input type="text" value="10">
+                            </div>
+                            <div class="form_item">
+                                <label>视频聊天花瓣/分钟</label>
+                                <input type="text" value="30">
+                            </div>
+                            <div class="form_item">
+                                <label>真心话花瓣价格区间</label>
+                                <input type="text" value="30">-<input type="text">
+                                <span>区间:</span><input type="text">
+                            </div>
+                            <div class="form_item">
+                                <label>挑逗花瓣价格区间</label>
+                                <input type="text" value="30">-<input type="text">
+                                <span>区间:</span><input type="text">
+                            </div>
+                            <button>提交</button>
+                        </form>
+                    </li>
+                </ul>
+            </main>
+        </div>
+    </li>
+    <li>
+        <h2>礼物花瓣价格设置</h2>
+        <form action="">
+            <div class="form_item">
+                <label>花朵</label>
+                <input type="text" value="1000">
+            </div>
+            <div class="form_item">
+                <label>棒棒糖</label>
+                <input type="text" value="1000">
+            </div>
+            <div class="form_item">
+                <label>香蕉</label>
+                <input type="text" value="1000">
+            </div>
+            <div class="form_item">
+                <label>黄瓜</label>
+                <input type="text" value="1000">
+            </div>
+            <div class="form_item">
+                <label>香吻</label>
+                <input type="text" value="1000">
+            </div>
+            <div class="form_item">
+                <label>钻戒</label>
+                <input type="text" value="1000">
+            </div>
+            <div class="form_item">
+                <label>跑车</label>
+                <input type="text" value="1000">
+            </div>
+            <div class="form_item">
+                <label>小岛</label>
+                <input type="text" value="1000">
+            </div>
+            <button>提交</button>
+        </form>
+    </li>
+    <li>
+        <h2>花瓣充值设置</h2>
+        <form action="">
+            <div class="form_item">
+                <label>充值金额</label>
+                <input type="text" value="1000">
+                <input type="checkbox" name="first" style="width: 20px"><span>是否首冲</span>
+            </div>
+            <div class="form_item">
+                <label>基础花瓣数量</label>
+                <input type="text" value="1000">
+            </div>
+            <div class="form_item">
+                <label>赠送VIP</label>
+                <select name="vip">
+                    <option value="">无</option>
+                    <option value="2">2</option>
+                    <option value="232">232</option>
+                    <option value="max">永久</option>
+                </select>
+            </div>
+            <button>创建</button>
+        </form>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+                <td>充值金额(元)</td>
+                <td>基础花瓣数量</td>
+                <td>赠送VIP</td>
+                <td>赠送VIP天数</td>
+                <td>是否首冲</td>
+                <td>排序</td>
+                <td>操作</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1999.00</td>
+                <td>1999</td>
+                <td>无</td>
+                <td></td>
+                <td>否</td>
+                <td><input type="text" value="99"></td>
+                <td><button class="error" style="margin-left: 0">删除</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </li>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/tabs.js"></script>

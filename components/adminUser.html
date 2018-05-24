@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<style>
+    .import{
+        padding:10px 0 0 10px;
+    }
+    .import input{
+        width: 200px;
+        margin-right: 10px;
+    }
+    .main label{
+        width: 130px;
+    }
+    .main input{
+        width: 200px;
+    }
+    .main button{
+        margin-left: 130px;
+    }
+
+</style>
+<body>
+<div class="search">
+    <form action="">
+        <label>组
+            <select name="group">
+                <option value="">所有</option>
+                <option value="man">男</option>
+                <option value="woman">女</option>
+            </select>
+        </label>
+        <label>用户名
+            <input type="text" name="uid" style="width: 100px">
+        </label>
+        <button type="button">查询</button>
+        <button type="button" class="add">新增</button>
+    </form>
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>用户名</td>
+        <td>部门</td>
+        <td>用户组</td>
+        <td>用户状态</td>
+        <td>登陆次数</td>
+        <td>上次登录IP</td>
+        <td>上次登录时间</td>
+        <td>添加时间</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>3</td>
+        <td>小蓓蓓</td>
+        <td>研发部</td>
+        <td>系统管理员</td>
+        <td style="color: #0DB209">正常</td>
+        <td>76</td>
+        <td>60.12.222.3</td>
+        <td>2017-08-25 17:23</td>
+        <td>2017-08-25 17:23</td>
+        <td>
+            <button type="button" class="edit">编辑</button>
+            <button type="button" class="error">删除</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div class="mark">
+    <div class="main">
+        <form action="">
+            <div class="form_item">
+                <label >
+                    用户名
+                </label>
+                <input type="text" name="nickname" readonly>
+            </div>
+
+            <div class="form_item">
+                <label >
+                    密码
+                </label>
+                <input type="text" name="mainChannel">
+            </div>
+            <div class="form_item">
+                <label >
+                    用户姓名
+                </label>
+                <input type="text" name="mainChannelChina">
+            </div>
+            <div class="form_item">
+                <label >
+                    手机号
+                </label>
+                <input type="text" name="childChannel">
+            </div>
+            <div class="form_item">
+                <label >
+                    Email
+                </label>
+                <input type="text" name="childChannel">
+            </div>
+            <div class="form_item">
+                <label >
+                    QQ
+                </label>
+                <input type="text" name="childChannel">
+            </div>
+            <div class="form_item">
+                <label >
+                    职位
+                </label>
+                <select name="">
+                    <option value="">系统管理员</option>
+                    <option value="">网站主管</option>
+                    <option value="">广告客服</option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label >
+                    状态
+                </label>
+                <select name="">
+                    <option value="">系统管理员</option>
+                    <option value="">网站主管</option>
+                    <option value="">广告客服</option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label >
+                    添加时间
+                </label>
+                <input type="text">
+            </div>
+            <div class="form_item">
+                <label >
+                    备注
+                </label>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+            </div>
+            <button>提交</button>
+        </form>
+    </div>
+</div>
+<ul class="page">
+            <p>共<span>188</span>条</p>
+            <i class="iconfont icon-zuoyoujiantou"></i>
+            <div>
+
+            </div>
+            <i class="iconfont icon-next"></i>
+        </ul>
+
+</div>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/comment.js"></script>
+<script src="../js/pageing.js"></script>

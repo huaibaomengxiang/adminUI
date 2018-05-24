@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+<div class="search">
+    <form action="">
+        <label>时间
+            <input class="timeInput" type="date" name="startTime">-<input class="timeInput" type="date" name="endTime">
+        </label>
+        <label>时段
+            <input class="timeInput" type="date" name="startTime">-<input class="timeInput" type="date" name="endTime">
+        </label>
+        <button type="button">查询</button>
+        <button type="button">导出Excel</button>
+    </form>
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>日期</td>
+        <td>时段</td>
+        <td>注册用户数</td>
+        <td>邂逅数</td>
+        <td>邂逅人数</td>
+        <td>体验卡使用人数</td>
+        <td>邂逅接通数</td>
+        <td>邂逅接通率</td>
+        <td>邂逅充值数</td>
+        <td>邂逅充值率</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>2018-01-22</td>
+        <td>00:00:00-23:59:59</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0%</td>
+        <td>0</td>
+        <td>0%</td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>

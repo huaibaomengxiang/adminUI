@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/tabs.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/userEdit.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<style>
+    .import{
+        padding:10px 0 0 10px;
+    }
+    .import input{
+        width: 200px;
+        margin-right: 10px;
+    }
+    .main label{
+        width: 130px;
+    }
+    .main input{
+        width: 200px;
+    }
+    .main button{
+        margin-left: 130px;
+    }
+
+</style>
+<body>
+<div class="tabs">
+    <header>
+        <ul class="tab">
+            <li class="tabActive">主渠道</li>
+            <li>子渠道</li>
+        </ul>
+    </header>
+    <main>
+        <ul class="content">
+            <li>
+                <div class="search">
+                    <div class="import">
+                        <input type="file" width="200px"><button>导入excel</button>
+                    </div>
+                    <form action="">
+                        <label>渠道名称
+                            <input type="text" name="uid" style="width: 100px">
+                        </label>
+                        <label>中文名称
+                            <input type="text" name="uid" style="width: 100px">
+                        </label>
+                        <button type="button">查询</button>
+                        <button type="button" class="add">新增</button>
+                    </form>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>渠道名称</td>
+                        <td>中文名称</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>29</td>
+                        <td class="next">b</td>
+                        <td class="next">百度</td>
+                        <td>
+                            <button type="button" class="add">新增子渠道</button>
+                            <button type="button" class="edit">编辑</button>
+                            <button type="button" class="error">删除</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <div class="search">
+                    <form action="">
+                        <label>主渠道名称
+                            <input type="text" name="uid" style="width: 100px">
+                        </label>
+                        <label>主中文名称
+                            <input type="text" name="uid" style="width: 100px">
+                        </label>
+                        <label>子渠道名称
+                            <input type="text" name="uid" style="width: 100px">
+                        </label>
+                        <button type="button">查询</button>
+                    </form>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>主渠道名称</td>
+                        <td>主渠道中文名称</td>
+                        <td>子渠道名称</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>38</td>
+                        <td>b</td>
+                        <td>新浪</td>
+                        <td>10</td>
+                        <td>
+                            <button type="button" class="edit">编辑</button>
+                            <button type="button" class="error">删除</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <div class="mark">
+                <div class="main">
+                    <form action="">
+                        <div class="form_item">
+                            <label >
+                                ID
+                            </label>
+                            <input type="text" name="id" readonly>
+                        </div>
+
+                        <div class="form_item">
+                            <label >
+                                主渠道名称
+                            </label>
+                            <input type="text" name="mainChannel">
+                        </div>
+                        <div class="form_item">
+                            <label >
+                                主渠道中文名称
+                            </label>
+                            <input type="text" name="mainChannelChina">
+                        </div>
+                        <div class="form_item">
+                            <label >
+                                子渠道名称
+                            </label>
+                            <input type="text" name="childChannel">
+                        </div>
+                        <button>提交</button>
+                    </form>
+                </div>
+            </div>
+        </ul>
+        <ul class="page">
+            <p>共<span>188</span>条</p>
+            <i class="iconfont icon-zuoyoujiantou"></i>
+            <div>
+
+            </div>
+            <i class="iconfont icon-next"></i>
+        </ul>
+    </main>
+</div>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/tabs.js"></script>
+<script src="../js/comment.js"></script>
+<script src="../js/pageing.js"></script>

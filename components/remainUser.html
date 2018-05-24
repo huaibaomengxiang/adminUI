@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<style>
+    p{
+        color: blue;
+        margin-left: 20px;
+    }
+</style>
+<body>
+<div class="search">
+    <form action="">
+        <label>时间
+            <input class="timeInput" type="date" name="startTime">-<input class="timeInput" type="date" name="endTime">
+        </label>
+        <button type="button">查询</button>
+        <button type="button">导出Excel</button>
+    </form>
+    <p>1.连续7天每天打开产品——忠诚用户</p>
+    <p>2.连续3天每天打开产品——活跃用户</p>
+    <p>3.时隔两天没有打开产品——不活跃用户</p>
+    <p>4.时隔7天没有打开产品——流失用户</p>
+    <p>5.再次打开产品相隔至少7天——回流用户</p>
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>日期</td>
+        <td>忠诚用户</td>
+        <td>活跃用户</td>
+        <td>不活跃用户</td>
+        <td>流失用户</td>
+        <td>回流用户</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>2018-01-22</td>
+        <td class="next">1</td>
+        <td class="next">2</td>
+        <td>1168</td>
+        <td>1109</td>
+        <td class="next">1</td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>

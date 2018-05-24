@@ -1,0 +1,30 @@
+.modify{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.form_item{
+    width: 50%;
+    height: 30px;
+    float: left;
+}
+label{
+    width: 80px;
+}
+.submit{
+    margin-left: 80px;
+}
+.longer{
+    width: 300px;
+}
+.showImg{
+    float: left;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 100px;
+}
+.showImg>img{
+    width: 100px;
+}
+

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<body>
+<div class="search">
+    <form action="">
+        <label>时间
+            <input class="timeInput" type="date" name="startTime">-<input class="timeInput" type="date" name="endTime">
+        </label>
+        <label>用户ID
+            <input type="text">
+        </label>
+        <label>用户昵称
+            <input type="text">
+        </label>
+        <button type="button">查询</button>
+        <button type="button">导出Excel</button>
+    </form>
+    <p style="font-weight: bold;margin-left: 20px">认证用户平均接通率：<span style="color: red">0%</span></p>
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>日期</td>
+        <td>用户</td>
+        <td>当日积分收入</td>
+        <td>在线时长</td>
+        <td>邂逅抢单数(成功数)</td>
+        <td>主动呼叫数(成功数)</td>
+        <td>被动呼叫数(成功数)</td>
+        <td>当日视频接通率(%)(累计)</td>
+        <td>当日视频次数</td>
+        <td>视频时长(秒)</td>
+        <td>视频时段(0-30s)</td>
+        <td>视频时段(30s-60s)</td>
+        <td>视频时段(>60s)</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>2018-01-22</td>
+        <td>滚滚滚(50000042)</td>
+        <td>183.00</td>
+        <td>16</td>
+        <td>0(0)--</td>
+        <td>2(2)--</td>
+        <td>0(0)--</td>
+        <td>0(83)--</td>
+        <td>2</td>
+        <td>44</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>

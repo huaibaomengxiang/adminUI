@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_535633_taszfdq4wajaif6r.css">
+</head>
+<style>
+    .main label{
+        width: 130px;
+    }
+    .main input{
+        width: 200px;
+    }
+    .main button{
+        margin-left: 130px;
+    }
+</style>
+<body>
+<div class="mark">
+    <div class="main">
+        <form action="">
+            <div class="form_item">
+                <label >
+                    ID
+                </label>
+                <input type="text" name="id" readonly>
+            </div>
+
+            <div class="form_item">
+                <label >
+                    礼物名称
+                </label>
+                <input type="text" name="giftName">
+            </div>
+            <div class="form_item">
+                <label >
+                    花瓣价格
+                </label>
+                <input type="text" name="petalPrice">
+            </div>
+            <div class="form_item">
+                <label >
+                    排序值
+                </label>
+                <input type="text" name="sort">
+            </div>
+            <div class="form_item">
+                <label >
+                    开关
+                </label>
+                <select name="switch">
+                    <option value="">开启</option>
+                    <option value="">关闭</option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label >
+                    图标(小)
+                </label>
+                <input type="file" name="smallPic">
+            </div>
+            <div class="form_item">
+                <label >
+                    图标(大)
+                </label>
+                <input type="file" name="bigPic">
+            </div>
+            <div class="form_item">
+                <label >
+                    礼物描述
+                </label>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+            </div>
+            <button>提交</button>
+        </form>
+    </div>
+</div>
+<div class="search">
+    <button type="button" class="add" style="margin-left: 10px">新增</button>
+</div>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>礼物名称</td>
+        <td>礼物描述</td>
+        <td>花瓣价格</td>
+        <td>排序值</td>
+        <td>图标(小)</td>
+        <td>图标(大)</td>
+        <td>添加时间</td>
+        <td>更新时间</td>
+        <td>开关</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>12093</td>
+        <td>铁锤妹妹</td>
+        <td>铁锤妹妹</td>
+        <td>4</td>
+        <td><input type="text" value="22"></td>
+        <td>
+            <img src="http://napi2.feyuu.com/user/50000119/album/9c95278f0210d9f5c1b6100891922b9e.jpg" alt="">
+        </td>
+        <td>
+            <img src="http://napi2.feyuu.com/user/50000119/album/9c95278f0210d9f5c1b6100891922b9e.jpg" alt="">
+        </td>
+        <td>2018-01-18 13:37:18</td>
+        <td>2018-01-18 13:37:18</td>
+        <td>
+            <select name="">
+                <option value="0">开启</option>
+                <option value="1">关闭</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" class="edit">编辑</button>
+            <button type="button" class="error">删除</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<ul class="page">
+    <p>共<span>188</span>条</p>
+    <i class="iconfont icon-zuoyoujiantou"></i>
+    <div>
+
+    </div>
+    <i class="iconfont icon-next"></i>
+</ul>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/pageing.js"></script>
+<script src="../js/comment.js"></script>
